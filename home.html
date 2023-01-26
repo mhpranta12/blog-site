@@ -17,6 +17,26 @@
       </script>
     <title>MH Blog Site</title>
     <!-- This example requires Tailwind CSS v3.0+ -->
+</head>
+<body>
+ 
+    
+
+    <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+
 <div class="isolate bg-white">
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
       <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +82,7 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img  src="./image/web.jpg" alt="">
+              <!-- <img  src="./image/web.jpg" alt=""> -->
             </a>
             <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Close menu</span>
@@ -122,9 +142,55 @@
       </div>
     </main>
   </div>
+<div class="bg-gray-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+        <h2 class="text-2xl font-bold text-gray-900">Blogs</h2>
   
-</head>
-<body>
-    
+        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div class="group relative">
+            <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="image/web.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a target="_blank" href="blog/fb_blog.html">
+                <span class="absolute inset-0"></span>
+                Tech
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Social Media and Their Tricks</p>
+          </div>
+  
+          <div class="group relative">
+            <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="image/death.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a target="_blank" href="blog/death.html">
+                <span class="absolute inset-0"></span>
+                Life
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">The Day of Death</p>
+          </div>
+  
+          <div class="group relative">
+            <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Travel
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Daily commute essentials</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 </body>
 </html>
